@@ -184,8 +184,80 @@ h1{
 	text-decoration: underline 10px red;
 }
 
+/*Contact Section*/
+
+#Contact{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+
+}
+
+.contactMessage{
+	position: relative;
+}
+
+.field{
+	border: none;
+	width: 100%;
+	background: #B2BABB;
+	border-bottom: 4px solid #B2BABB;
+	font-size: 20px;
+	width: 25em;
+	margin-bottom: 20px;
+	resize:none;
+	transition: .3s ease-in-out;
+}
 
 
+
+
+label{	
+	left: 0;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	color: #FDFEFE;	
+	width: 100%;
+	top: 13px;
+	margin-left: 10px;
+	transition: .3s ease-in-out;
+}
+
+.field, label{
+	font-size: 20px;
+	
+	font-family: cornelia-sans;
+}
+
+.field:focus {
+	border-bottom: 3px solid red;
+	outline: none;
+	
+}
+
+.field:focus +label, .field:not(:placeholder-shown) +label{
+	top: -6px;
+	
+}
+
+
+
+.contactInput{
+	position: relative;
+}
+
+.contactMessage{
+	margin-top: 10px;
+}
+
+#messageLabel{
+	top: -3px;
+}
+.field:focus + #messageLabel, .field:not(:placeholder-shown) +#messageLabel{
+	top: -20px;
+}
 /*Mobile*/
 
 @media all and (max-width: 500px){
