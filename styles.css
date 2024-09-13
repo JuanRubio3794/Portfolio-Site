@@ -52,8 +52,6 @@ body{
 	
 }
 
-
-
 #navbar a{
 	color: black;
 	text-decoration: none;
@@ -68,8 +66,6 @@ body{
 	
 	
 }
-
-
 
 #navbar img{
 	margin-right: 6%;
@@ -146,6 +142,39 @@ body{
 	font-size: 2em;
 }
 
+#introUp{
+	animation: fadeUp 1.2s linear;
+	
+}
+
+#introDown{
+	animation: fadeDown 1.2s linear;
+	
+	
+}
+
+@keyframes fadeDown{
+	0%{ 
+		opacity: 0;
+		transform: translatey(-700px);	
+	}
+	100%{ 
+		opacity: 1;
+		transform: translatey(0);	
+	}
+}
+
+@keyframes fadeUp{
+	0%{ 
+		opacity: 0;
+		transform: translatey(+500px);	
+	}
+	100%{ 
+		opacity: 1;
+		transform: translatey(0);	
+	}
+}
+
 #About{
 	position: relative;
 	text-align: center;
@@ -159,6 +188,41 @@ body{
 	margin-bottom: 15vh;
 }
 
+@keyFrames fadeLeft{
+	0%{ 
+		opacity: 0;
+		transform: translateX(+500px);	
+	}
+	100%{ 
+		opacity: 1;
+		transform: translateX(0);	
+	}
+}
+
+@keyFrames fadeRight{
+	0%{ 
+		opacity: 0;
+		transform: translateX(-500px);	
+	}
+	100%{ 
+		opacity: 1;
+		transform: translateX(0);	
+	}
+}
+
+.animateRight.in-view{
+	animation: fadeRight 1.2s linear;
+	animation-delay: .3s;
+	animation-fill-mode: both;
+}
+
+
+.animateLeft.in-view{
+	animation: fadeLeft 1.2s linear;
+	animation-fill-mode: both;
+	animation-delay: .3s;
+}
+
 #Projects{
 	position: relative;
 	text-align: center;
@@ -168,7 +232,6 @@ body{
 	font-size: 2em;
 	margin-bottom: 15vh;
 }
-
 
 #Contact{
 	position: relative;
@@ -210,9 +273,6 @@ h1{
 	transition: .3s ease-in-out;
 }
 
-
-
-
 label{	
 	left: 0;
 	position: absolute;
@@ -242,8 +302,6 @@ label{
 	
 }
 
-
-
 .contactInput{
 	position: relative;
 }
@@ -257,6 +315,19 @@ label{
 }
 .field:focus + #messageLabel, .field:not(:placeholder-shown) +#messageLabel{
 	top: -20px;
+}
+
+/*Footer*/
+
+footer{
+	text-align: center;
+	
+}
+
+#footerText{
+	color: white;
+	font-weight: bold;
+	margin-bottom: 2vh;
 }
 /*Mobile*/
 
