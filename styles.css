@@ -125,6 +125,17 @@ body{
 	display: flex;
 }
 
+#projectItems {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid black;
+}
+
+.projectLinks{
+	text-decoration: none;
+	color: inherit;
+}
 
 #intro-text{
 	
@@ -231,6 +242,15 @@ body{
 	text-shadow: 4px 4px 4px black;
 	font-size: 2em;
 	margin-bottom: 15vh;
+}
+
+.ProjectScreenshot{
+	width: 100%;
+
+}
+
+.projectTitle{
+	margin: 0;
 }
 
 #Contact{

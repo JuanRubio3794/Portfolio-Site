@@ -2,111 +2,139 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body> 
+<body>
 
-<div id="filter"></div>
+	<div id="filter"></div>
 
-<main id="main-doc">
+	<main id="main-doc">
 
-	<div id="left-side">
-      <nav id="navbar">
-		
-        <a class="nav-link" href="#intro" onmouseover="playSound('sounds/Cursor-Move.mp3');">
-		<img class="cursor" src="images/FF1-Cursor.png">	
-			Home
-		</a>
-		
-		
-        <a class="nav-link" href="#About">
-		<img class="cursor" src="images/FF1-Cursor.png">
-			About Me
-		</a>
-		
-        <a class="nav-link" href="#Projects">
-		<img class="cursor" src="images/FF1-Cursor.png">	
-			Projects
-		</a>
-		
-        <a class="nav-link" href="#Contact">
-		<img class="cursor" src="images/FF1-Cursor.png">	
-			Contact Me
-		</a>  	
-      </nav>
-	  
-	<div id="skills"> 	
-		<img class="skillIcon" src="images/html-5.png">
-		<img class="skillIcon" src="images/css.png">
-		<img class="skillIcon" src="images/javascript.png">
-	</div>
-	</div>
-	
-	<div id="main-section">
-	
-	<section class="main-content" id="intro">
-		<div id="intro-text">
-			<h1 id="introDown">Hi, I'm Juan Rubio.</h1>
-			<h2 id="introUp">A Front End Web Developer.</h2>
-		</div>
-	</section>
+		<div id="left-side">
+			<nav id="navbar">
 
-	<section class="main-content" id="About">
-		<h1 class="animate animateRight">About Me</h1>
-		<p class="animate animateLeft">I am a front-end developer located near Visalia, California. I am always interested in learning how our technology works and what can be done with it, but most importantly, I enjoy using what I learn to make things your everyday person might find usefull. 
-		When I am not learning new things related to web development, I am spending time with friends and family or playing video games.</p>
-	</section>	
-	
-	<section class="main-content" id="Projects">
-		<h1 class="animate animateRight">Projects</h1>
-			<div>
-		
+				<a class="nav-link" href="#intro" onmouseover="playSound('sounds/Cursor-Move.mp3');">
+					<img class="cursor" src="images/FF1-Cursor.png">
+					Home
+				</a>
+
+
+				<a class="nav-link" href="#About">
+					<img class="cursor" src="images/FF1-Cursor.png">
+					About Me
+				</a>
+
+				<a class="nav-link" href="#Projects">
+					<img class="cursor" src="images/FF1-Cursor.png">
+					Projects
+				</a>
+
+				<a class="nav-link" href="#Contact">
+					<img class="cursor" src="images/FF1-Cursor.png">
+					Contact Me
+				</a>
+			</nav>
+
+			<div id="skills">
+				<img class="skillIcon" src="images/html-5.png">
+				<img class="skillIcon" src="images/css.png">
+				<img class="skillIcon" src="images/javascript.png">
+				<img class="skillIcon" src="images/vb.png">
 			</div>
-	
-	</section>	
-	
-	<section class="main-content" id="Contact">
-		<h1 class="animate animateRight">Contact Me</h1>
-		
-			<form method="POST" id="form" class="animate animateLeft">
-				
+		</div>
+
+		<div id="main-section">
+
+			<section class="main-content" id="intro">
+				<div id="intro-text">
+					<h1 id="introDown">Hi, I'm Juan Rubio.</h1>
+					<h2 id="introUp">A Front End Web Developer.</h2>
+				</div>
+			</section>
+
+			<section class="main-content" id="About">
+				<h1 class="animate animateRight">About Me</h1>
+				<p class="animate animateLeft">
+					I am a front-end developer located near Visalia, California. I am always interested in learning how our technology works and what can be done with it, but most importantly, I enjoy using what I learn to make things your everyday person might find usefull.
+					When I am not learning new things related to web development, I am spending time with friends and family or playing video games.
+				</p>
+			</section>
+
+			<section class="main-content" id="Projects">
+				<h1 class="animate animateRight">Projects</h1>
+
+				<div id="projectItems" class="animate animateLeft">
+
+					<a class="projectLinks" href="https://github.com/JuanRubio3794/.NET-Game">
+						<h2 class="projectTitle">
+							VB Game
+						</h2>
+						<table>
+
+							<tr>
+								<td>
+									<img class="ProjectScreenshot" src="images/Game.png">
+								</td>
+								<td>
+									Simple game made with Visual Basic. Defeat enemies using a sword and bow to earn money. The player can buy new weapons and armor in between rounds to prepare for the boss in the 5th wave.
+								</td>
+							</tr>
+
+						</table>
+
+					</a>
+
+
+				</div>
+
+
+			</section>
+
+			<section class="main-content" id="Contact">
+				<h1 class="animate animateRight">Contact Me</h1>
+
+				<form method="POST" id="form" class="animate animateLeft">
+
 					<input type="hidden" name="access_key" value="abeadc60-9fd6-4b2c-8c4b-57f4e9d50f87">
 					<input type="hidden" name="subject" value="New Submission from Web3Forms">
 					<input type="checkbox" name="botcheck" id="" style="display: none;">
-	
-					<div class="contactInput"> 
-						<input  id="name" name="name" type="text" placeholder="" class="field" required>
-						<label for="name">Name</label>					
+
+					<div class="contactInput">
+						<input id="name" name="name" type="text" placeholder="" class="field" required>
+						<label for="name">Name</label>
 					</div>
 
-					<div class="contactInput"> 
-						<input  id="email" name="email" type="email" placeholder="" class="field" required>
-						<label for="email">E-mail</label>					
+					<div class="contactInput">
+						<input id="email" name="email" type="email" placeholder="" class="field" required>
+						<label for="email">E-mail</label>
 					</div>
-					
-					<div class="contactMessage" id="messageBox"> 
-						<textarea id="message" name="message" placeholder="" class="field" ></textarea>
-						<label for="message" id="messageLabel">Message</label>					
+
+					<div class="contactMessage" id="messageBox">
+						<textarea id="message" name="message" placeholder="" class="field"></textarea>
+						<label for="message" id="messageLabel">Message</label>
 					</div>
-					
-					<button type="submit" >Submit</button>
+
+					<button type="submit">Submit</button>
 					<div id="result"></div>
-			</form>
-	</section>	
+				</form>
+			</section>
 
-<footer>
-<a href="mailto:juanrub3794@gmail.com"><img src="images/github.png"></a>
-<a href="https://github.com/JuanRubio3794"><img src="images/email.png"></a>
-<p id="footerText">Juan Rubio 2024</p>
+			<footer>
+				<a href="https://github.com/JuanRubio3794"><img src="images/github.png"></a>
+				<a href="mailto:juanrub3794@gmail.com"><img src="images/email.png"></a>
+				<p id="footerText">Juan Rubio 2024</p>
 
 
-</footer>	
-	</div>
-</main>
+			</footer>
+		</div>
+	</main>
 </body>
 
-<script src="mainPage.js"></script>
+
 
 </html>
+<script src="mainPage.js"></script>
+
+
